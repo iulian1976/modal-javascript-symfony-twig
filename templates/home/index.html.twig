@@ -1,0 +1,109 @@
+{% block head %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+{% endblock %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Salut ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <section class="section">
+            <div class="container">
+                <h3 class="title is-4">
+                    Examples
+                </h3>
+                <div class="buttons">
+
+                    <span class="button is-warning is-medium modal-button" data-target="modal-bgImage"></span>
+                </div>
+                <div class="container"></div>
+        </section>
+
+
+
+        <div id="modal-bgImage" class="modal modal-fx-3dSignDown">
+
+            <div class="modal-content">
+                <!-- content -->
+                <code class="html">&lt;div id="modal-id" class="modal <em>modal-fx-fadeInScale</em>"&gt;
+            </div>
+        </div>
+
+        {% block javascripts %}
+            <script>
+                // Trigger modals
+                (function () {
+                    var modalFX = (function () {
+
+                        var elements = {
+                            target: 'data-target',
+                            button: '.modal-button',
+                            background: '.modal-background'
+                        };
+
+                        var events = function () {
+                            onClickEach(elements.button, openModal);
+                        };
+
+                        var closeAll = function() {
+                            var openModal = document.querySelectorAll('.' + elements.active);
+                            openModal.forEach(function (modal) {
+                                modal.classList.remove(elements.active);
+                            })
+                            unFreeze();
+                        };
+
+                        var openModal = function () {
+                            var modal = this.getAttribute(elements.target);
+                            freeze();
+                            document.getElementById(modal).classList.add(elements.active);
+                        };
+
+                        var closeModal = function () {
+                            var modal = this.parentElement.id;
+                            document.getElementById(modal).classList.remove(elements.active);
+                            unFreeze();
+                        };
+
+                        // Freeze scrollbars
+                        var freeze = function () {
+                            document.getElementsByTagName('html')[0].style.overflow = "hidden"
+
+                        };
+
+                        var unFreeze = function () {
+                            document.getElementsByTagName('html')[0].style.overflow = ""
+                            document.getElementsByTagName('body')[0].style.overflowY = "";
+                        };
+
+                        return {
+                            init: function () {
+                                events();
+                            }
+                        }
+                    })();
+
+                    modalFX.init();
+
+                })();
+
+
+            </script>
+            <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+
+        {% endblock %}
+
+
+
+    </ul>
+</div>
+{% endblock %}
