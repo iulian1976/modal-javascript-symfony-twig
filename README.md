@@ -21,6 +21,8 @@ configuration
   php bin/console make:form 
   
   CategoryType
+  
+  Category
         
         
 
