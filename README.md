@@ -12,7 +12,7 @@ configuration
   Entity   un maping Gedmo\Mapping\Annotation     
   
   /*
-  *  @Gedmo\Slug
+  *  @Gedmo\Slug(fields={"name"})
   *
   */
         
