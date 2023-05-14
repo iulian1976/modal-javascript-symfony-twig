@@ -26,6 +26,8 @@ configuration
   
   11:1  create formulaire Form pour rajoute ctaegogrie
   14:53 pour save dans la bdd
+  
+  Gennere slub par raport nome, title interesand de Entity
         
         
 
