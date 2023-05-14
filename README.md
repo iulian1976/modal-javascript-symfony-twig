@@ -9,4 +9,7 @@ configuration
         default sluggable: true
         
         
+  Entity   un maping Gedmo\Mapping\Annotation      
+        
+        
 
