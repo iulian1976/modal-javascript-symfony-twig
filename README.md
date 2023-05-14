@@ -15,6 +15,12 @@ configuration
   *  @Gedmo\Slug(fields={"name"})
   *
   */
+  
+  php bin/console make:controller SlugController
+  
+  php bin/console make:form 
+  
+  CategoryType
         
         
 
