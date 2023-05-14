@@ -28,6 +28,10 @@ configuration
   14:53 pour save dans la bdd
   
   Gennere slub par raport nome, title interesand de Entity
+  
+  17:22 Pour date timistampable
+  
+  
         
         
 
