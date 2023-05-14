@@ -23,6 +23,8 @@ configuration
   CategoryType
   
   Category
+  
+  11:1  create formulaire Form pour rajoute ctaegogrie
         
         
 
