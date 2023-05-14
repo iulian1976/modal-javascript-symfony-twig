@@ -25,6 +25,7 @@ configuration
   Category
   
   11:1  create formulaire Form pour rajoute ctaegogrie
+  14:53 pour save dans la bdd
         
         
 
