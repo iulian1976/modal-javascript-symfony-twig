@@ -9,7 +9,12 @@ configuration
         default sluggable: true
         
         
-  Entity   un maping Gedmo\Mapping\Annotation      
+  Entity   un maping Gedmo\Mapping\Annotation     
+  
+  /*
+  *  @Gedmo\Slug
+  *
+  */
         
         
 
